@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/mapp.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Select a Country</title>
+
+    <style></style>
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <div class="row select-header header">
+
+        <div class="col-md-12">
+          <div id="datalist" class="custom-form__group datalist">
+            <input
+              list="datalist-ul"
+              autocomplete="off"
+              id="datalist-input"
+              class="datalist-input country"
+              type="text"
+              name="cursor"
+              title="Choose wisely"
+              placeholder="Select a Country"
+              readonly
+            />
+            <label class="group__label" for="datalist-input">Country</label>
+            <ul id="datalist-ul" class="select-country datalist-ul">
+              <li>Select Country</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-3 pr-1 callag">
+          <div id="flag"></div>
+          <div id="call-code"></div>
+        </div>
+
+        <div class="col-9 pr-0">
+          <div id="info"></div>
+        </div>
+      </div>
+
+      <div class="row mt-1 weamap mb-5">
+        <div class="col-6 weather text-center px-0">
+          <h4 class=" text-center m-0" id="weather-report"></h4>
+          <div id="weather"></div>
+        </div>
+        <div class="col-6 map text-center px-0 mb-4" id="app"></div>
+      </div>
+    </div>
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="../js/mapp.env.js"></script>
+    <script src="../js/mapp.min.js"></script>
+    <script src="./select.js"></script>
+  </body>
+</html>
