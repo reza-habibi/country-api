@@ -4,13 +4,13 @@ $(document).ready(function () {
     method: "GET",
   };
 
-  document.querySelector(".datalist-input").addEventListener("click", () => {
-    document.querySelector(".datalist").classList.add("active");
-  });
+  $('.datalist-input').click(()=>{
+      $('.datalist').addClass('active')
+  })
 
   $(document).click(function (e) {
     if (!$(e.target).is(".datalist-input")) {
-      document.querySelector(".datalist").classList.toggle("active");
+        $('.datalist').toggleClass('active')
     }
   });
 
